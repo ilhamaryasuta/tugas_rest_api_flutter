@@ -1,0 +1,183 @@
+{
+  "uuid": "0782a9c8-4673-4135-ab83-6944ede29b98",
+  "lastMigration": 28,
+  "name": "Praktikum 1. REST API FLUTTER",
+  "endpointPrefix": "api",
+  "latency": 0,
+  "port": 80,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "0fccdea6-079b-4c72-b289-e756d89a9a82",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "data.json",
+      "responses": [
+        {
+          "uuid": "07011848-4dbb-4b09-90c9-5c0f9e961dec",
+          "body": "{\"page\":1,\"per_page\":3,\"total\":12,\"total_pages\":4,\"data\":[{\"id\":1,\"produk\":\"Produk Beng - Beng\",\"first_name\":\"Tasty Snack Indonesia\",\"last_name\":\"Murah Meriah\",\"avatar\":\"http://localhost/api/img/produk1\"},{\"id\":2,\"produk\" :\"Richess\",\"first_name\":\"Ahh\",\"last_name\":\"Joss\",\"avatar\":\"http://localhost/api/img/produk2\"},{\"id\":3,\"produk\":\"IndomieKuah\",\"first_name\":\"Rasa Mantap\",\"last_name\":\"Joss\",\"avatar\":\"http://localhost/api/img/produk3\"}],\"support\":{\"url\":\"https://reqres.in/#support-heading\",\"text\":\"To keep ReqRes free, contributions towards server costs are appreciated!\"}}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id"
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "1e1040a8-71b6-41d9-8bfa-bfcd913907b9",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "img/produk1",
+      "responses": [
+        {
+          "uuid": "8377ccbc-b3b8-4e74-ad14-bfa85aa0eb82",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "FILE",
+          "filePath": "F:\\User\\ilham\\Documents\\TUGAS UCIC\\SEM1\\MobileDev\\flutter\\tugas_rest_api_mockoon\\produk1.jpg",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id"
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "42f25532-ea26-456c-bdd9-1d9909424ab6",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "img/produk2",
+      "responses": [
+        {
+          "uuid": "9f804824-ad5c-49b5-b85b-fcfd37df140f",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "FILE",
+          "filePath": "F:\\User\\ilham\\Documents\\TUGAS UCIC\\SEM1\\MobileDev\\flutter\\tugas_rest_api_mockoon\\produk2.jpg",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id"
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "1274f409-bc77-4c66-b873-d14063c87f35",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "img/produk3",
+      "responses": [
+        {
+          "uuid": "0a378dac-45b0-4f90-a0d0-326e860a31b0",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "",
+              "value": ""
+            }
+          ],
+          "bodyType": "FILE",
+          "filePath": "F:\\User\\ilham\\Documents\\TUGAS UCIC\\SEM1\\MobileDev\\flutter\\tugas_rest_api_mockoon\\produk3.jpg",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id"
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "0fccdea6-079b-4c72-b289-e756d89a9a82"
+    },
+    {
+      "type": "route",
+      "uuid": "1e1040a8-71b6-41d9-8bfa-bfcd913907b9"
+    },
+    {
+      "type": "route",
+      "uuid": "42f25532-ea26-456c-bdd9-1d9909424ab6"
+    },
+    {
+      "type": "route",
+      "uuid": "1274f409-bc77-4c66-b873-d14063c87f35"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": []
+}
